@@ -1,0 +1,480 @@
+# 1201.0.3-alpha.37
+
+Quick hotfix.
+
+### Fixed
+
+- 2026.08.09
+  - Fixed Duplicator recipes being incorrect.
+  - Fixed certain Quad Duplicator recipes not outputting 1 (original copy of the item) + 4 (4 copies from the original item).
+
+### Added
+
+N/A
+
+### Changed
+
+No text here, but there is a mod update.
+
+<details>
+<summary>1201.0.3-alpha.36 mod updates</summary>
+
+- 2026.08.09
+  - Scholar `1.2.3` to `1.2.5`
+
+</details>
+
+### Removed
+
+N/A
+
+---
+
+# 1201.0.3-alpha.36
+
+Also known as the Conductor's Scriptures update.
+
+**Update 0.3 is a work in progress and will be inheriting previous changelogs until it is finalized with all the things I have wanted to implement!**
+
+While this is technically still a minor update in my book, there are breaking changes due to mod removal and thus it is not backwards compatible.
+
+For example, Fruitful Fun has been removed as it has been causing crashes in a server environment.
+
+Additional mods have also been added.
+
+### Fixed
+
+- 2026.08.02
+  - Fixed missing translation string `string.kubejs.server.login.hold_w_to_ponder` for first world load.
+- 2026.04.09
+  - Fixed binary and hex code mechanical crafting recipes being mirrored by default. Hopefully shouldn't be able to be mirrored any longer... I assumed they were not mirrored by default, but I was wrong apparently.
+- 2026.03.05
+  - Fixed Color Yellow's hex code mechanical crafting recipe being incorrect. I'm afraid to know how long it has had the incorrect recipe for now and how it probably made it impossible to craft.
+- 2026.02.xx
+  - Fixed not being able to craft a normal Minecraft Chest from modded planks. The recipe *should* exist by default, but it seems to be getting removed by an external mod and I've already taken the time to check if any of my scripts do remove the vanilla Chest recipe... but none of them do.
+  - Fixed the Witch Eye for End Remastered being uncraftable if Extended Crafting is not present.
+  - Fixed conflict between Carry On and Easy Villagers blocks by adding the blocks to the blacklist config.
+  - Finally fixed Lightman's Currency villager trades.
+  - Partially migrated tooltips from Create's tooltip registry into KubeJS tooltip generation. [This took the bulk of this update's time.]
+
+### Added
+
+- 2026.08.07
+  - Added tooltips for for each stage Final Singularity to help determine which ones are random and what the possible items are.
+- 2026.08.06
+  - Finished (for the most part) implementing soundtrack layering with the addition of Maestro. You will also hear Terraria soundtracks.
+- 2026.08.02
+  - Added tooltip on both the Dormant and Awakened versions of the Singularity Core for clarity on how to get them.
+- 2026.04.04
+  - Added a Duplicator block for use with Extruders and other applicable situations.
+  - Added Quadruple Duplicator and Quadruple Duplicator Block with a different set of recipes.
+  - Added the True Duplicator with a separate set of recipes.
+  - Added Crimson Fluid as a new way to make Cobblestone into Netherrack. It can be extracted from Crimson
+  - Added the Reconstructor, the opposite of the Deconstructor. It can convert Deepslate into Bedrock.
+  - Added an item application recipe to undo Bedrock into Deepslate with the Deconstructor.
+- 2026.04.03
+  - Added recipes to make Ars Noveau, Ars Elemental and Iron's Spellbooks armor unbreakable with Create's Experience Blocks.
+  - Added a recipe to undo Scoria into Soul Sand.
+- 2026.02.xx - 2026.03.xx
+  - Added Egg duplication recipe to reduce the reliance on Chicken entity farms later on when automating Blaze Cake Bases.
+  - New methods for making Blaze Cake Base when compacting together in a Basin:
+    - Potato, Sugar, Cinder Flour
+    - Rice, Sugar, Cinder Flour
+  - Added specific block duplication recipe for Biomes o' Plenty such as:
+    - Black Sand
+    - Orange Sand
+    - White Sand
+    - etc.
+  - Added duplication recipes for all of Alex's Caves cave tablets.
+  - Added a recipe to obtain Cardiac's Life Bottles.
+  - Added 2 hidden Create blocks and their textures: Refined Radiance Block and Dark Steel Block.
+  - Added Minecraft Classic Wool palette with carpets too.
+
+<details>
+<summary>1201.0.3-alpha.36 mod additions</summary>
+
+- 2026.08.05
+  - Vista
+- 2026.08.04
+  - Aquamirae
+  - Ars Elixirum
+  - Maestro
+  - Pillager Caravans
+- 2026.04.21
+  - Re:Avaritia
+- 2026.04.09
+  - Gadgets Against Grind
+- 2026.04.03
+  - Ars Energistique
+- 2026.04.02
+  - Gateways to Eternity
+- 2026.03.29
+  - AllTheLeaks
+- 2026.03.28
+  - Kaleidoscope Tavern
+  - Integrated Villages
+- 2026.03.27
+  - Kaleidoscope Cookery
+  - Rechiseled: Applied Energistics 2
+  - Iron's Patron Library (Dependency of Iron's Spellbooks)
+- 2026.03.26
+  - Ars Nouveau
+    - Ars Creo
+    - Ars Elemental
+- 2026.03.25
+  - Lighting Wand
+- 2026.03.10
+  - ~~Better Combat~~ (Removed as of 2026.04.02)
+  - Combat Roll
+  - Qlipoth Awakening
+- 2026.03.09
+  - Beyond Dimensions
+- 2026.03.06
+  - Particle Rain
+- 2026.02.21
+  - Create: Automotives
+  - From The Shadows Reborn
+  - No Chat Reports
+  - Pipez
+  - Plasmo Voice
+    - pv-addon-groups
+    - pv-addon-sculk
+- 2026.02.17
+  - Storage Labels
+
+</details>
+
+### Changed
+
+- 2026.08.07
+  - Removed mixing recipes for Final Singularity: Stage IV and replaced them with one mechanical crafting recipe. This should make creating a MAM system easier.
+  - Added Ender Pearl Singularity as a requirement for making the Umbral Mechanism.
+- 2026.08.06
+  - Removed modifications for making Sophisticated Storage Chests, Barrels and Shulker Boxes. This means they no longer require Create Electron Tubes to craft. Upgrades are unaffected, however.
+  - Adjusted Deepslate cobble generation rates.
+- 2026.08.05
+  - Updated both of Frawzy's sound packs.
+- 2026.07.30
+  - Quintuple Condensed Matrices can now be duplicated by the True Duplicator.
+- 2026.04.08
+  - Modified weights of Bedrock cobble generation recipes. Also now produces Cobbled Deepslate instead of just regular Deepslate.
+  - Changed AE2 storage cell recipes to be able to be crafted in a crafting table.
+  - Changed Iridium Ingot from Netherite and Brass recipe to output 2x Iridium Ingots instead of 1x.
+- 2026.04.03
+  - Adjusted output rates of Create's orestones to be equal across the board *and* be increased.
+  - Modified Tuff crushing recipe to now produce crushed raw ores as a chanced result.
+  - Adjusted output rates of Extruder recipes to be more in line with other methods.
+  - Modified washing recipes of Gravel, Red Sand and Soul Sand to have a higher chance of yielding their respective useful materials.
+- 2026.02.xx - 2026.03.xx
+  - Liquid Null from Biomes o' Plenty can now be bottomless.
+  - Null Matter from crushing Crushing Wheels is now guaranteed to yield 1x Null Matter instead of being a 12% chance result.
+  - Decreased Lunar event occurence chance from 40% to 25%.
+  - Increased weight of Blood Moon events from 10 to 30.
+  - Decreased weight of White Moon events from 50 to 45.
+  - Hopefully disabled Big Moon events by setting weight from 25 to 0.
+  - Players can no longer sleep during Crimson Moons.
+  - Increased weight of Crimson Moons from 5 to 7.
+  - Wall Lanterns from Amendments have been added to Create's Wrench Pickup tag.
+  - Changed default keybind for GuideMe's `Open Guide for Items` action from `[W]` to `[G]`.
+  - Lodestones can no longer be made with Netherite Ingots.
+  - Added the `#minecraft:leaves` tag to the `#kubejs:compost_eligible` item tag so that leaves can be used to make Dirt.
+  - Retextured Tenebris Punctura.
+  - Create's Zinc Ore now has emissive texture support with Fusion.
+  - Changed how projectiles are spawned from certain weapons.
+  - Changed Scythe of Eternal Oblivion's projectile from Dragon Fireballs to Wither Skulls.
+  - Changed the recipe for Substitute Jizo to use colored wool and leaves instead of hex colors.
+  - `irons_spellbooks:citadel_keeper` can no longer be spawned from Apotheosis spawners. Utilize Gateways to Eternity & Hostile Neural Networks instead to acquire Netherite Scrap from them.
+  - AE2 Annihilation Cores now use Null Matter instead of Electron Tube Singularities. Recipe now also outputs 2x Annihilation Cores instead of 1x. Also no longer require Mechanical Crafters to create.
+  - Iron Golems no longer drop any Iron Ingots. Instead, they drop exactly 324x Iron Nuggets with and without Looting.
+  - Final Scythe can now shoot both Wither Skulls and Ender Dragon Fireballs depending on if you are sneaking or not.
+  - Eversor Gems can no longer be recycled into Unstable Entropy Particles.
+  - ~~Matchboxes now inherently have unlimited durability.~~ Realistic Torches has been removed, so this no longer applies unless if the mod is present.
+- 2026.02.15
+  - Updated Neruina to `3.2.1` to potentially fix world crashing on save. **Please** let me know if there are issues.
+- 2026.02.11
+  - Made the following changes for Lunar:
+    - It was my fault for not reading what the Eclipse Moon actually does, so this addresses the frustration with Eclipse Moon events entirely. I had assumed Eclipse Moon events would cover the world in a true dark sense and not give players Warden blindness. My deepest apologies. **Hopefully disabled the Eclipse Moon event by setting its weight from 50 to 0. If an Eclipse Moon does happen again, please let me know.**
+    - You can no longer sleep during White Moon.
+
+<details>
+<summary>1201.0.3-alpha.36 mod updates</summary>
+
+- 2026.08.08
+  - Sophisticated Backpacks `3.24.62.2017` to `3.24.63.2049`
+  - Sophisticated Core `1.3.73.2192` to `1.3.75.2231`
+  - Sophisticated Storage `1.4.78.2029` to `1.4.79.2061`
+  - SuperMartijn642's Core Lib `1.1.22` to `1.1.23a`
+- 2026.08.06
+  - EntityJS
+- 2026.08.04
+  - Blueprint `7.1.3` to `7.1.4`
+- 2026.08.03
+  - Create: Enchantment Industry `1.4.0` to `1.4.1`
+- 2026.07.30
+  - EntityJS `0.7.1` to `0.7.2`
+  - Fusion `1.3.9` to `1.3.12`
+- 2026.07.28
+  - Ars Elemental `0.6.7.9` to `0.6.8.0`
+  - Balm `7.3.38` to `7.3.41`
+  - Beyond Dimensions `0.7.24` to `0.7.26`
+  - Default Options `18.0.4` to `18.0.5`
+  - EntityJS `0.6.9` to `0.7.1`
+  - Fragmentum `1.3.0` to `1.5.2`
+  - Fusion `1.3.4` to `1.3.9`
+  - Iron's Lib `1.1.0` to `2.1.0`
+  - Iron's Spells 'n Spellbooks: `3.16.1` to `3.16.2`
+  - Jade `11.13.2` to `11.13.3`
+  - Kaleidoscope Tavern `1.1.2` to `1.2.0`
+  - Lightman's Currency `2.3.0.4g` to `2.3.0.5`
+  - ModernFix `5.27.58` to `5.27.66`
+  - Neruina `3.3.2` to `3.3.3`
+  - Re:Avaritia `1.4.0` to `1.4.1`
+  - Reliquary `2.0.61.1507` to `2.0.62.1532`
+  - Scholar `1.2.2` to `1.2.3`
+  - Simple Discord RPC `4.1.2` to `4.1.4`
+  - Sophisticated Backpacks `3.24.58.1934` to `3.24.62.2017`
+  - Sophisticated Core `1.3.58.2078` to `1.3.73.2192`
+  - Sophisticated Storage `1.4.62.1899` to `1.4.78.2029`
+  - Sophisticated Storage Create Integration `0.1.20.164` to `0.1.23.206`
+  - Summoning Rituals `2.0.8` to `2.0.9`
+  - SuperMartijn642's Core Lib `1.1.21` to `1.1.22`
+- 2026.06.30
+  - AmbientSounds 6 `6.3.7` to `6.3.8`
+  - Beyond Dimensions `0.7.14` to `0.7.24`
+  - Collective `8.20` to `8.39`
+  - Crafting Tweaks `18.2.8` to `18.2.9`
+  - CraterLib `3.1.1` to `3.1.2+hotfix.1`
+  - Create: Central Kitchen `1.4.3b` to `1.5.0`
+  - Create: Enchantment Industry `1.3.3` to `1.4.0`
+  - CreativeCore `2.12.37` to `2.12.39`
+  - EntityJS `0.6.7` to `0.6.9`
+  - Endfield Industry `1.0.2` to `1.0.3`
+  - Farmer's Delight `1.3.1 to `1.3.2`
+  - Fragmentum `1.2.2` to `1.3.0`
+  - FTB Chunks `2001.3.7` to `2001.3.8`
+  - FTB Library `2001.2.12` to `2001.2.13`
+  - FTB Quests `2001.4.21` to `2001.4.22`
+  - Fusion `1.2.12` to `1.3.4`
+  - GeckoLib `4.8.3` to `4.8.4`
+  - GuideMe `20.1.14` to `20.1.15`
+  - Healing Campfire `6.2` to `6.3`
+  - Iron's Lib `1.0.2` to `1.1.0`
+  - Iron's Spells 'n Spellbooks `3.15.6` to `3.16.1`
+  - Jade Addons `5.5.0` to `5.5.1`
+  - Just Enough Items `15.20.0.130` to `15.20.0.132`
+  - Kaleidoscope Cookery `1.3.0` to `1.4.1`
+  - Kaleidoscope Tavern `1.0.1` to `1.1.2`
+  - Kiwi `11.10.1` to `11.10.3`
+  - KleeSlabs `15.0.11` to `15.0.12`
+  - KubeJS `2001.6.5-build.24` to `2001.6.5-build.26`
+  - L_Ender's Cataclysm `3.27` to `3.31`
+  - Lightman's Currency `2.3.0.4e` to `2.3.0.4g`
+  - Lionfish API `2.7` to `3.0`
+  - Loot Journal `6.1.2` to `6.2.1`
+  - Lychee `5.2.0` to `5.2.1`
+  - ModernFix `5.27.15` to `5.27.58`
+  - Moonlight Lib `2.16.30` to `2.16.34`
+  - Neruina `3.3.0` to 3.3.2`
+  - Particle Rain `v4-beta.9` to `v4-beta.10`
+  - Particular Reforged `1.2.7` to `1.5.5`
+  - Plasmo Voice `2.1.9` to `2.1.13`
+  - Platform `1.3.2` to `1.3.4`
+  - Re:Avaritia `1.3.9.8-release-fix1` to `1.4.0-release`
+  - Rechiseled `1.2.4` to `1.2.5`
+  - Rechiseled: Applied Energistics 2 `1.0.0` to `1.0.1`
+  - Rechiseled: Create `1.1.0` to `1.1.1`
+  - Reliquary Reincarnations `2.0.56.1418` to `2.0.61.1507`
+  - Scholar `1.1.9` to `1.2.2`
+  - Simple Discord RPC `4.1.0+hotfix.1` to `4.1.2`
+  - Sophisticated Backpacks `3.24.36.1713` to `3.24.58.1934`
+  - Sophisticated Backpacks Create Integration `0.1.5.30` to `0.1.8.116`
+  - Sophisticated Core `1.3.30.1809` to `1.3.58.2078`
+  - Sophisticated Storage `1.4.42.1701` to `1.4.62.1899`
+  - Sophisticated Storage Create Integration `0.1.19.125` to `0.1.20.164`
+  - Touhou Little Maid `1.5.2` to `1.5.3`
+  - Vanilla Backport `1.1.6.3` to `1.1.7.10`
+- 2026.04.30
+  - AmbentSounds `6.3.4` to `6.3.7`
+  - Create: Automotives `V1` to V2`
+  - CreativeCore `2.12.35` to `2.12.37`
+  - Farmer's Delight `1.2.11a` to `1.3.1`
+  - Fragmentum `1.1.4` to `1.2.2`
+  - Kaleidoscope Cookery `1.2.1` to `1.3.0`
+  - KubeJS `2001.6.5-build.16` to `2001.6.5-build.24`
+  - MmmMmmMmmMmm (Target Dummy) `2.0.9` to `2.0.12`
+  - ModernFix `5.27.8` to `5.27.15`
+  - Neruina `3.2.2` to `3.3.0`
+  - Reliquary `2.0.55.1326` to `2.0.56.1418`
+  - Sophisticated Backpacks `3.24.35.1675` to `3.24.36.1713`
+  - Sophisticated Core `1.3.21.1676` to `1.3.30.1809`
+  - Sophisticated Storage `1.4.36.1621` to `1.4.42.1701`
+  - Sophisticated Storage Create Integration `0.1.18.119` to `0.1.19.125`
+  - Zume `1.2.1` to `1.2.2`
+- 2026.04.21
+  - Beyond Dimensions `0.7.12` to `0.7.14`
+- 2026.04.20
+  - Artifacts `9.5.18` to `9.5.19`
+  - Collective `8.13` to `8.20`
+  - CraterLib `3.1.0` to `3.1.1`
+  - Cycle Paintings `4.1` to `4.2`
+  - Endfield Industry `1.0.1` to `1.0.2`
+  - Farmer's Delight `1.2.11` to `1.2.11a`
+  - FTB Quests `2001.4.20` to `2001.4.21`
+  - Immersive Vehicles `23.0.0` to `24.0.0`
+  - Integrated API `1.7.2` to `1.7.4`
+  - Iron's Lib `1.0.1` to `1.0.2`
+  - Iron's Spells 'n Spellbooks `3.15.5.1` to `3.15.6`
+  - Just Enough Items `15.20.0.129` to `15.20.0.130`
+  - L_Ender's Cataclysm `3.16` to `3.27-curios-fix`
+  - Lionfish API `2.4-Fix` to `2.7`
+  - ModernFix `5.26.2` to `5.27.8` (Possibly problematic for enchantments)
+  - Moonlight Lib `2.16.28` to `2.16.30`
+  - Plasmo Voice `2.1.8` to `2.1.9`
+  - Sophisticated Backpacks `3.24.32.1645` to `3.24.35.1675`
+  - Sophisticated Core `1.3.20.1670` to `1.3.21.1676`
+  - Sophisticated Storage `1.4.35.1613` to `1.4.36.1621`
+  - Sophisticated Storage Create Integration `0.1.16.97` to `0.1.18.119`
+- 2026.04.09
+  - Sophisticated Core `1.3.18.1647` to `1.3.20.1670`
+  - Sophisticated Storage `1.4.34.1598` to `1.4.35.1613`
+- 2026.04.08
+  - Touhou Little Maid `1.5.1` to `1.5.2`
+- 2026.04.07
+  - Explorer's Compass `1.3.3` to `1.4.0`
+  - Nature's Compass ``1.11.2` to `1.12.0`
+  - Sophisticated Backpacks `3.24.31.1628` to `3.24.32.1645`
+  - Sophisticated Core `1.3.16.1631` to `1.3.18.1647`
+  - Sophisticated Storage `1.4.33.1593` to `1.4.34.1598`
+  - Supplementaries `3.1.42` to `3.1.43`
+  - Touhou Little Maid `1.5.0` to `1.5.1`
+- 2026.04.05
+  - Artifacts `9.5.16` to `9.5.18`
+  - Beyond Dimensions `0.7.10` to `0.7.12`
+  - FTB Chunks `2001.3.6` to `2001.3.7`
+  - FTB Quests `2001.4.18` to `2001.4.20`
+  - FTB Ultimine `2001.1.7` to `2001.1.8`
+  - Loot Journal `6.1.0` to `6.1.2`
+  - Sophisticated Core `1.3.13.1588` to `1.3.16.1631`
+  - Sophisticated Storage `1.4.32.1585` to `1.4.33.1593`
+  - Sophisticated Storage Create Integration `0.1.15.63` to `0.1.16.97`
+- 2026.04.02
+  - CraterLib `3.0.1` to `3.1.0`
+  - FDLib `1.0.8` to `1.0.9`
+  - Fragmentum `1.1.0` to `1.1.4`
+  - Framework `0.7.15` to `0.8.0`
+  - Integrated API `1.7.1` to `1.7.2`
+  - Loot Journal: Pickup Notifier `5.0.1` to `6.0.3`
+  - Particle Rain `4.0.0-beta.8` to `4.0.0-beta.9`
+  - Simple Discord RPC `4.0.5` to `4.1.0+hotfix.1`
+  - Sophisticated Backpacks `3.24.29.1603` to `3.24.31.1628`
+  - Sophisticated Core `1.3.11.1565` to `1.3.13.1588`
+  - Sophisticated Storage `1.4.29.1536` to `1.4.32.1585`
+- 2026.03.29
+  - Endfield Industry `1.0.0` to `1.0.1`
+  - Integrated API `1.7.0` to `1.7.1`
+  - Sophisticated Core `1.3.10.1552` to `1.3.11.1565`
+- 2026.03.28
+  - Integrated API `1.5.3` to `1.7.0`
+  - Iron's Patreon Library `1.0.0` to `1.0.1`
+  - Platform `1.3` to `1.3.2`
+  - Vanilla Backport `1.1.6.2` to `1.1.6.3`
+- 2026.03.27
+  - Beyond Dimensions `0.7.8` to `0.7.10`
+  - Iron's Spells 'n Spellbooks `3.15.4` to `3.15.5.1`
+- 2026.03.26
+  - Beyond Dimensions `0.7.6` to `0.7.8`
+  - Mowzie's Mobs `1.7.3` to `1.8.2`
+  - Particle Rain `v4-beta.6` to `v4-beta.8`
+  - Platform `1.2.11.6.2` to `1.3`
+  - Vanilla Backport `1.1.5.4.2` to `1.1.6.2`
+- 2026.03.24
+  - EntityJS `0.6.6` to `0.6.7`
+  - Farmer's Delight `1.2.10` to `1.2.11`
+  - Sophisticated Backpacks `3.24.29.1588` to `3.24.29.1603`
+  - Sophisticated Core `1.3.8.1524` to `1.3.8.1552`
+  - Sophisticated Storage `1.4.29.1527` to `1.4.29.1536`
+- 2026.03.21
+  - Baubley Heart Canisters `1.1.1` to `1.2.0`
+  - CobbleGen `5.4.7` to `5.4.8`
+  - Integrated Dungeons and Structures `1.12.1` to `1.13.0`
+  - Sophisticated Backpacks `3.24.26.1567` to `3.24.29.1588`
+  - Supermartijn642's Core Lib `1.1.20` to `1.1.21`
+- 2026.03.15
+  - Sophisticated Backpacks `3.24.24.1538` to `3.24.26.1567`
+  - Sophisticated Core `1.3.5.1505` to `1.3.8.1524`
+  - Sophisticated Storage `1.4.25.1488` to `1.4.29.1527`
+- 2026.03.12
+  - Beyond Dimensions `0.7.5` to `0.7.6`
+- 2026.03.10
+  - Beyond Dimensions `0.7.4` to `0.7.5`
+- 2026.03.09
+  - Particle Rain `4.0.0-beta.5` to `4.0.0-beta.6`
+  - Patchouli `84.1` to `85`
+- 2026.03.05
+  - Relics `0.8.0.11` to `0.8.0.13`
+- 2026.03.03
+  - Iron's Spells 'n Spellbooks `3.15.3` to `3.15.4`
+  - Lightman's Currency `2.3.0.4d` to `2.3.0.4e`
+  - Neruina `3.2.1` to `3.2.2`
+  - Rechiseled `1.2.3` to `1.2.4`
+  - Relics `0.8.0.11` to `0.8.0.12`
+- 2026.02.25
+  - Moonlight Lib `2.16.27` to `2.16.28`
+  - Sooty Chimneys `1.2.4` to `1.3.4`
+- 2026.02.21
+  - Create: Some Assembly Required `4.2.2` to `4.2.3`
+  - CreativeCore `2.12.32` to `2.12.35`
+  - Item Collectors `1.1.11` to `1.1.12`
+  - Lychee `5.1.24` to `5.2.0`
+  - Sophisticated Backpacks `3.24.23.1529` to `3.24.24.1538`
+  - Sophisticated Core `1.3.4.1491` to `1.3.5.1505`
+- 2026.02.17
+  - Create: Copycats+ `3.0.5` to `3.0.7`
+- 2026.02.15
+  - Better Burning `9.0.2` to `9.0.3`
+  - Bookshelf `20.2.13` to `20.2.15`
+  - Create: Copycats+ `3.0.4` to `3.0.5`
+  - Dark Paintings `17.0.5` to `17.0.6`
+  - Enchantment Descriptions `17.1.20` to `17.1.21`
+  - Farmer's Delight `1.2.9` to `1.2.10`
+  - FTB Quests `2001.4.17` to `2001.4.18`
+  - Iron's Spells 'n Spellbooks `3.15.2` to `3.15.3`
+  - Neruina `2.1.2` to `3.2.1`
+  - Platform `1.2.11.5` to `1.2.11.6.2`
+  - Rechiseled `1.2.2` to `1.2.3`
+  - Sophisticated Backpacks `3.24.21.1515` to `3.24.23.1529`
+  - Sophisticated Core `1.3.2.1468` to `1.3.4.1491`
+  - Sophisticated Storage `1.4.24.1486` to `1.4.25.1488`
+  - Tips `12.1.8` to `12.1.9`
+  - Vanilla Backport `1.1.5.4` to `1.1.5.4.2`
+
+</details>
+
+### Removed
+
+- 2026.08.07
+  - Removed stable mixing recipe for making Final Singularity Stage 1.
+- 2026.08.04
+  - Removed Distant Friends, Eyes in the Darkness and Realistic Torches.
+- 2026.04.02
+  - Removed Better Combat due to undesired incompatibility with Apotheosis and Enigmatic Legacy.
+- 2026.02.28
+  - Removed Dark Doppelganger: Iron's Spells and Spellbooks Addon
+- 2025.02.14
+  - Removed Fruitful Fun due to being the cause of world side crashes.
+
+<details>
+<summary>1201.0.3-alpha.36 mod removals</summary>
+
+- 2026.08.04
+  - Distant Friends
+  - Eyes in the Darkness
+  - Realistic Torches
+- 2026.04.02
+  - Better Combat
+- 2026.02.28
+  - Dark Doppelganger: Iron's Spells and Spellbooks Addon
+- 2026.02.14
+  - Fruitful Fun
+
+</details>
